@@ -1,0 +1,43 @@
+/* body {
+  color: white;
+  background-color: black;
+} */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.left {
+  width: 25vw;
+  height: 100vh;
+}
+
+.right {
+  width: 75vw;
+  height: 100vh;
+}
+
+.home ul li {
+  width: 15px;
+  gap: 15px;
+  display: flex;
+  list-style: none;
+  padding-top: 15px;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.bg-grey {
+  background-color: #121212;
+}
+
+.library {
+  margin-top: 10px;
+}
