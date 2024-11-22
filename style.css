@@ -5,6 +5,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Roboto";
 }
 
 .left {
@@ -23,6 +24,18 @@
   display: flex;
   list-style: none;
   padding-top: 15px;
+  font-weight: bold;
+}
+
+.heading {
+  height: 15px;
+  width: 100%;
+  gap: 15px;
+  padding: 23px 14px;
+  font-size: 13px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
 }
 
 .bg-black {
@@ -40,4 +53,31 @@
 
 .library {
   margin-top: 10px;
+  min-height: 70vh;
+  position: relative;
+}
+
+/* .playlist-heading {
+  margin-top: -3px;
+} */
+
+.heading img {
+  width: 25px;
+}
+
+.footer {
+  display: flex;
+  color: grey;
+  font-size: 10px;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer a {
+  color: grey;
+}
+
+.home {
+  min-height: 23vh;
 }
