@@ -81,3 +81,13 @@
 .home {
   min-height: 23vh;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d0d0d;
+}
+
+.header > * {
+  padding: 20px;
+}
