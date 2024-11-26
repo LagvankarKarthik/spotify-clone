@@ -10,7 +10,7 @@
 
 .left {
   width: 25vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .right {
@@ -90,4 +90,34 @@
 
 .header > * {
   padding: 20px;
+}
+
+.playlist {
+  font-size: 15px;
+  padding: 6px 20px;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  width: 150px;
+  height: 250px;
+  background-color: #0d0d0d;
+  padding: 10px;
+  margin: 20px 1px;
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 135px;
+  right: 8px;
+}
+
+.playlist-image {
+  width: 150px;
+  justify-items: center;
 }

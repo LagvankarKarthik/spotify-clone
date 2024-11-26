@@ -1,0 +1,18 @@
+<svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Circle Background -->
+                <circle cx="24" cy="24" r="22" fill="green" />
+
+                <!-- Play Icon -->
+                <path
+                  d="M20 16L32 24L20 32V16Z"
+                  stroke="#141B34"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
