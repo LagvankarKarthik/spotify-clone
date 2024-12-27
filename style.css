@@ -16,6 +16,7 @@
 .right {
   width: 75vw;
   height: 100vh;
+  position: relative;
 }
 
 .home ul li {
@@ -57,10 +58,6 @@
   position: relative;
 }
 
-/* .playlist-heading {
-  margin-top: -3px;
-} */
-
 .heading img {
   width: 25px;
 }
@@ -72,6 +69,8 @@
   gap: 13px;
   position: absolute;
   bottom: 0;
+  padding: 10px;
+  text-wrap: nowrap;
 }
 
 .footer a {
@@ -86,6 +85,8 @@
   display: flex;
   justify-content: space-between;
   background-color: #0d0d0d;
+  max-height: 68px;
+  align-items: center;
 }
 
 .header > * {
@@ -100,6 +101,9 @@
 .cardContainer {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 
 .card {
@@ -115,9 +119,62 @@
   position: absolute;
   top: 135px;
   right: 8px;
+  opacity: 0;
+  transition: all 0.5s ease-out;
 }
 
 .playlist-image {
   width: 150px;
   justify-items: center;
+}
+
+.buttons > * {
+  margin: 0px 12px;
+}
+
+.signup-btn {
+  background-color: #090909;
+  color: rgb(140, 139, 139);
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  transition: transform 0.2s ease, color 0.2s ease; /* Smooth scaling */
+}
+
+.signup-btn:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05); /* Scales the button slightly */
+}
+
+.login-btn {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth scaling */
+}
+
+.login-btn:hover {
+  background-color: rgb(223, 222, 222);
+  transform: scale(1.05); /* Scales the button slightly */
+}
+
+.playbar {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  background-color: rgb(6, 77, 6);
+  padding: 20px;
+  width: 93%;
+  justify-content: center;
+}
+
+.songButtons {
+  display: flex;
+  gap: 20px;
 }

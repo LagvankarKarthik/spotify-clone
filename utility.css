@@ -25,3 +25,36 @@
 .m-5 {
   margin: 5px;
 }
+
+/* For WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Dark gray background of the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Medium gray scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #2c2c2c; /* Adds space between the thumb and track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Lighter gray on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #555 #2c2c2c; /* Thumb color, then track color */
+}
+
+/* Optional: Dark mode compatibility */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
